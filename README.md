@@ -75,3 +75,6 @@ Follow these steps to run the project locally:
    ```bash
    php artisan serve
    Access the application at http://http://127.0.0.1:8000.
+
+### Contributing 🤝
+- Contributions are welcome! If you’d like to improve this project, fork the repository, create a branch, and submit a pull request.
