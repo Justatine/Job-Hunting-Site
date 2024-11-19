@@ -44,3 +44,34 @@ Follow these steps to run the project locally:
    ```bash
    git clone https://github.com/your-username/job-hunting-system.git
    cd job-hunting-system
+
+2. **Install Dependencies**  
+   ```bash
+   composer install
+   npm install && npm run dev
+
+2. **Set Up Environment**  
+   ```bash
+   cp .env.example .env
+
+2. **Update the .env file with your database credentials**  
+   ```bash
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=job_hunting
+    DB_USERNAME=root
+    DB_PASSWORD=your_password
+
+2. **Generate App Key**  
+   ```bash
+    php artisan key:generate
+
+2. **Run Migrations**  
+   ```bash
+   php artisan migrate --seed
+
+2. **Run the Application**  
+   ```bash
+   php artisan serve
+   Access the application at http://http://127.0.0.1:8000.
